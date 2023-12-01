@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "rvw-chmp"
+client_id = "ab5543db85d8997ca769f20e833fcdb8"
+application_url = "https://depend-calendar-losses-refused.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://depend-calendar-losses-refused.trycloudflare.com/auth/callback",
+  "https://depend-calendar-losses-refused.trycloudflare.com/auth/shopify/callback",
+  "https://depend-calendar-losses-refused.trycloudflare.com/api/auth/callback",
+  "https://depend-calendar-losses-refused.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-8d9ecddc.myshopify.com"
